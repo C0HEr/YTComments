@@ -1,0 +1,7 @@
+google-api-python-client
+confluent-kafka
+pyspark
+textblob
+streamlit
+pandas
+matplotlib
