@@ -4,7 +4,6 @@ This project performs real-time sentiment analysis on YouTube comments using Kaf
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [License](#license)
@@ -26,7 +25,14 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/C0HEr/YTComments.git
    cd YTComments
 
-2. **Build and start Docker containers:**
+2. **Pull the Docker Hub image::**
+    You can use the pre-built Docker image available on Docker Hub:
+
+    ```bash
+    docker pull d3v3r/ytcomments
+
+
+3. **Build and start Docker containers:**
     The project uses Docker to manage services like Kafka, Spark. Use the following command to start them:
     
     ```bash
@@ -38,7 +44,7 @@ Before you begin, ensure you have the following installed:
 
     After the services start, you can access the Streamlit dashboard at http://localhost:8501.
 
-3. **Project Structure:**
+4. **Project Structure:**
     ```bash
     ├── app/
     │   ├── spark.py              # Spark job for processing comments and performing sentiment analysis
@@ -64,10 +70,12 @@ Before you begin, ensure you have the following installed:
 - **Streamlit**: To create an interactive web dashboard to display sentiment analysis results.
 - **Docker**: To containerize all the services and make deployment easier.
 
+## Docker Hub Image
+    You can find the Docker image for this project on Docker Hub:
 
-### Instructions:
-1. **Replace placeholders** (like `C0HEr` and `YTComments`) with actual values.
-2. **Ensure your Docker and Python setup matches** the instructions in the file.
-3. **List your project on GitHub** with this full `README.md`.
+    - **Image Name**: [d3v3r/ytcomments](https://hub.docker.com/r/d3v3r/ytcomments)
 
+    You can pull the image using the following command:
 
+    ```bash
+    docker pull d3v3r/ytcomments
